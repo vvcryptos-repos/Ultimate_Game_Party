@@ -7,7 +7,7 @@ export function setupEmotes() {
   // Create the activation sphere for emotes
   const activationSphere: Entity = engine.addEntity()
   Transform.create(activationSphere, {
-    position: Vector3.create(16, 1, 20), // Positioned in front of the player
+    position: Vector3.create(20, 8, 20), // Positioned in front of the player
     scale: Vector3.create(0.5, 0.5, 0.5), // Larger size for easier interaction
   })
   MeshRenderer.setSphere(activationSphere) // Render as a sphere
@@ -24,9 +24,9 @@ export function setupEmotes() {
 
   // Define emote cubes
   const emoteCubes = [
-    { emote: "wave", position: Vector3.create(20, 2, 18), entity: null as unknown as Entity },
-    { emote: "fistpump", position: Vector3.create(20, 2, 20), entity: null as unknown as Entity },
-    { emote: "dance", position: Vector3.create(20, 2, 22), entity: null as unknown as Entity },
+    { emote: "wave", position: Vector3.create(18, 8, 20), entity: null as unknown as Entity },
+    { emote: "fistpump", position: Vector3.create(14, 8, 20), entity: null as unknown as Entity },
+    { emote: "dance", position: Vector3.create(10, 8, 20), entity: null as unknown as Entity },
   ]
 
   // Initialize the emote cubes
